@@ -81,7 +81,7 @@ export default async function ProductPage({ params }: PageProps) {
         )}
       </main>
       <Footer />
-      <WhatsAppButton />
+      {/*<WhatsAppButton />*/}
     </>
   );
 }

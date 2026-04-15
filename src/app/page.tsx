@@ -62,7 +62,7 @@ export default function HomePage() {
       </main>
 
       <Footer />
-      <WhatsAppButton />
+      {/*<WhatsAppButton />*/}
       <SocialProofToast />
     </>
   );
