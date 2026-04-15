@@ -24,7 +24,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-            src="/images/logo-planeta-atacados.png"
+            src="/images/logo-planeta-atacados.jpeg"
             alt="Planeta Atacados"
             width={160}
             height={45}
