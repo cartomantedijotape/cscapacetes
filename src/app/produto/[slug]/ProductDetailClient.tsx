@@ -11,6 +11,7 @@ import {
   Minus,
   Plus,
   Check,
+  Share2,
 } from "lucide-react";
 import { useCart } from "@/hooks/useCart";
 import type { Product } from "@/types/product";
@@ -35,6 +36,7 @@ export function ProductDetailClient({
   const [quantity, setQuantity] = useState(1);
   const [addedBumps, setAddedBumps] = useState<Set<string>>(new Set());
   const [justAdded, setJustAdded] = useState(false);
+  const [shared, setShared] = useState(false);
 
   const handleAddToCart = () => {
     // Add main product
@@ -114,7 +116,7 @@ export function ProductDetailClient({
           {product.name}
         </h1>
 
-        {/* Rating + Sold */}
+        {/* Rating + Sold + Share */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
@@ -130,6 +132,31 @@ export function ProductDetailClient({
           <span className="text-xs text-muted-foreground">
             {product.sold} vendidos
           </span>
+          <button
+            onClick={async () => {
+              const url = window.location.href;
+              if (navigator.share) {
+                try {
+                  await navigator.share({
+                    title: product.name,
+                    text: `Confira ${product.name} por apenas ${product.price} na CS Capacetes!`,
+                    url,
+                  });
+                } catch {
+                  // user cancelled share
+                }
+              } else {
+                await navigator.clipboard.writeText(url);
+                setShared(true);
+                setTimeout(() => setShared(false), 2000);
+              }
+            }}
+            className="ml-auto flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-cs-primary transition-colors px-2.5 py-1.5 rounded-lg border border-border hover:border-cs-primary/30"
+            aria-label="Compartilhar produto"
+          >
+            <Share2 className="h-4 w-4" />
+            {shared ? "Link copiado!" : "Compartilhar"}
+          </button>
         </div>
 
         {/* Flash Sale Urgency Bar */}
