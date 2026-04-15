@@ -139,7 +139,7 @@ export function ProductDetailClient({
                 try {
                   await navigator.share({
                     title: product.name,
-                    text: `Confira ${product.name} por apenas ${product.price} na CS Capacetes!`,
+                    text: `Confira ${product.name} por apenas ${product.price} na Planeta Atacados!`,
                     url,
                   });
                 } catch {

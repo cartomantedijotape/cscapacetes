@@ -11,7 +11,7 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-heading: var(--font-sans);
 
-  /* CS Capacetes custom colors */
+  /* Planeta Atacados custom colors */
   --color-cs-primary: var(--cs-primary);
   --color-cs-primary-hover: var(--cs-primary-hover);
   --color-cs-accent: var(--cs-accent);
@@ -62,7 +62,7 @@
 }
 
 :root {
-  /* CS Capacetes Design Tokens */
+  /* Planeta Atacados Design Tokens */
   --background: oklch(1 0 0);
   --foreground: oklch(0.24 0 0);
   --card: oklch(1 0 0);
@@ -83,7 +83,7 @@
   --ring: oklch(0.58 0.2 350);
   --radius: 0.5rem;
 
-  /* CS Capacetes specific tokens */
+  /* Planeta Atacados specific tokens */
   --cs-primary: oklch(0.58 0.2 350);
   --cs-primary-hover: oklch(0.5 0.22 340);
   --cs-accent: oklch(0.7 0.18 55);

@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductBySlug(slug);
   if (!product) return { title: "Produto não encontrado" };
   return {
-    title: `${product.name} — CS Capacetes`,
-    description: `Compre ${product.name} por apenas ${product.price} no PIX. Era ${product.oldPrice}. Frete para todo o Brasil.`,
+    title: `${product.name} — Planeta Atacados`,
+    description: `Compre ${product.name} por apenas ${product.price} no PIX. Era ${product.oldPrice}. Frete para todo o Brasil. Planeta Atacados.`,
   };
 }
 

@@ -2,6 +2,7 @@
 
 import { ShoppingCart, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navCategories } from "@/lib/products";
 import { useCart } from "@/hooks/useCart";
@@ -21,10 +22,15 @@ export function Header() {
       {/* Main nav */}
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-extrabold text-foreground tracking-tight">
-            CS <span className="text-cs-primary">Capacetes</span>
-          </span>
+        <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Image
+            src="/images/logo-planeta-atacados.png"
+            alt="Planeta Atacados"
+            width={160}
+            height={45}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

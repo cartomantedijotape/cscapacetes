@@ -4,11 +4,11 @@ import { CartDrawer } from "@/components/CartDrawer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CS Capacetes",
+  title: "Planeta Atacados",
   description:
-    "CS Capacetes - Capacetes e acessórios para motociclistas com até 87% OFF. NORISK, LS2, AGV, Alpinestars.",
+    "Planeta Atacados - Capacetes e acessórios para motociclistas com até 87% OFF. NORISK, LS2, AGV, Alpinestars.",
   openGraph: {
-    title: "CS Capacetes — Capacetes e Acessórios",
+    title: "Planeta Atacados — Capacetes e Acessórios",
     description:
       "Capacetes e acessórios para motociclistas com até 87% de desconto. Marcas: NORISK, LS2, AGV, Alpinestars.",
     type: "website",

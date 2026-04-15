@@ -25,7 +25,7 @@ export function Footer() {
             <Store className="h-8 w-8 text-cs-green shrink-0" />
             <div>
               <p className="text-sm font-semibold text-white">Sobre a loja</p>
-              <p className="text-xs text-cs-footer-fg/70">CS Capacetes — Capacetes e acessórios para motociclistas</p>
+              <p className="text-xs text-cs-footer-fg/70">Planeta Atacados — Capacetes e acessórios para motociclistas</p>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold text-white mb-3">Sobre a loja</h4>
           <p className="text-xs leading-relaxed">
-            CS Capacetes é sua loja online de capacetes e acessórios para motociclistas. Trabalhamos com as melhores marcas do mercado como NORISK, LS2, AGV e Alpinestars.
+            Planeta Atacados é sua loja online de capacetes e acessórios para motociclistas. Trabalhamos com as melhores marcas do mercado como NORISK, LS2, AGV e Alpinestars.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-[11px] text-cs-footer-fg/50">
-            © 2025 CS Capacetes. Todos os direitos reservados.
+            © 2025 Planeta Atacados. Todos os direitos reservados.
           </p>
         </div>
       </div>
