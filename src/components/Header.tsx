@@ -15,7 +15,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-border">
       {/* Top promotional bar */}
       <div className="bg-cs-primary text-white text-center py-1.5 px-4 text-xs font-medium tracking-wide">
-        🔥 OFERTA RELÂMPAGO — até <span className="font-bold">87% OFF</span> em
+        🔥 QUEIMA DE ESTOQUE — até <span className="font-bold">87% OFF</span> em
         capacetes e jaquetas!
       </div>
 
