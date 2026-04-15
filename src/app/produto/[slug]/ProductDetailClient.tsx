@@ -15,6 +15,7 @@ import {
 import { useCart } from "@/hooks/useCart";
 import type { Product } from "@/types/product";
 import { bumpProducts, formatPrice } from "@/lib/products";
+import { FlashSaleBar } from "@/components/FlashSaleBar";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -131,20 +132,22 @@ export function ProductDetailClient({
           </span>
         </div>
 
-        {/* Price */}
-        <div className="bg-muted/50 rounded-xl p-4 space-y-1">
-          <div className="text-sm text-muted-foreground line-through">
-            {product.oldPrice}
-          </div>
+        {/* Flash Sale Urgency Bar */}
+        <FlashSaleBar
+          discount={discount}
+          currentPrice={product.priceNumber}
+          oldPrice={product.oldPriceNumber}
+        />
+
+        {/* Installment info */}
+        <div className="bg-muted/50 rounded-xl p-3">
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-extrabold text-cs-primary">
-              {product.price}
+            <span className="text-sm text-muted-foreground">
+              ou 3x de{" "}
+              <span className="font-bold text-foreground">R$ {installmentPrice}</span>{" "}
+              sem juros no cartão
             </span>
-            <span className="text-sm text-cs-green font-bold">no PIX</span>
           </div>
-          <p className="text-xs text-muted-foreground">
-            ou 3x de R$ {installmentPrice} sem juros
-          </p>
         </div>
 
         {/* Sizes */}

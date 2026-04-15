@@ -138,6 +138,11 @@
   background: linear-gradient(135deg, var(--cs-price-from), var(--cs-price-to));
 }
 
+/* Flash sale urgency bar */
+.flash-sale-bar {
+  background: linear-gradient(135deg, #f97316, #ea580c, #dc2626);
+}
+
 /* Pulse animation for urgency elements */
 @keyframes pulse-glow {
   0%, 100% { opacity: 1; }

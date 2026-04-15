@@ -19,6 +19,10 @@ export interface Review {
   name: string;
   text: string;
   rating: number;
+  image?: string;
+  date?: string;
+  productBought?: string;
+  verified?: boolean;
 }
 
 export interface BrandInfo {

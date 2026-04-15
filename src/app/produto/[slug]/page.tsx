@@ -5,12 +5,14 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ProductDetailClient } from "./ProductDetailClient";
 import { ProductCard } from "@/components/ProductCard";
+import { ProductReviews } from "@/components/ProductReviews";
 import {
   getProductBySlug,
   getAllSlugs,
   getRelatedProducts,
   getDiscountPercentage,
   brands,
+  reviews,
 } from "@/lib/products";
 
 interface PageProps {
@@ -64,9 +66,14 @@ export default async function ProductPage({ params }: PageProps) {
           />
         </div>
 
+        {/* Customer Reviews */}
+        <div className="bg-muted/30">
+          <ProductReviews reviews={reviews} />
+        </div>
+
         {/* Related products */}
         {related.length > 0 && (
-          <section className="bg-muted/30 py-10 px-4">
+          <section className="bg-white py-10 px-4">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-xl font-extrabold text-foreground text-center mb-6">
                 Produtos relacionados

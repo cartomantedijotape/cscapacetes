@@ -44,13 +44,59 @@ export const products: Product[] = [
 ];
 
 export const reviews: Review[] = [
-  { name: "Lucas Souza", text: "Chegou no prazo, capacete de qualidade!!", rating: 5 },
-  { name: "Joel Lima", text: "De todos os capacetes que tive, esse é o melhor!", rating: 5 },
-  { name: "Carlos Santos", text: "Comprei meio na dúvida, mas a qualidade surpreendeu", rating: 5 },
-  { name: "Fernanda Oliveira", text: "Jaqueta top demais, material resistente e bonita! Superou minhas expectativas", rating: 5 },
-  { name: "Patrícia Mendes", text: "Amei a jaqueta, chegou certinho e o tamanho ficou perfeito!", rating: 5 },
-  { name: "Camila Souza", text: "Capacete LS2 muito top! Acabamento impecável, viseira cristalina e ventilação excelente. Melhor custo-benefício que já comprei!", rating: 5 },
-  { name: "Rafael Mendes", text: "Produto excelente, chegou bem embalado e dentro do prazo!", rating: 5 },
+  {
+    name: "Lucas Souza",
+    text: "Chegou no prazo, capacete de qualidade!! Acabamento perfeito, pintura impecável. Muito melhor do que eu esperava pelo preço. Recomendo demais!",
+    rating: 5,
+    image: "/reviews/lucas-souza.png",
+    date: "12/04/2026",
+    productBought: "NORISK Soul II Grand Prix",
+    verified: true,
+  },
+  {
+    name: "Joel Lima",
+    text: "De todos os capacetes que tive, esse é o melhor! Veio muito bem embalado, caixa perfeita. O capacete é leve, confortável e a viseira é cristalina. Nota 10!",
+    rating: 5,
+    image: "/reviews/joel-lima.png",
+    date: "10/04/2026",
+    productBought: "LS2 FF358 Classic Draze",
+    verified: true,
+  },
+  {
+    name: "Carlos Santos",
+    text: "Comprei meio na dúvida pelo preço baixo, mas a qualidade surpreendeu muito! Material premium, forração macia e ventilação excelente. Já é meu capacete principal.",
+    rating: 5,
+    image: "/reviews/carlos-santos.png",
+    date: "08/04/2026",
+    productBought: "NORISK Rock Monocolor Preto",
+    verified: true,
+  },
+  {
+    name: "Patrícia Mendes",
+    text: "Amei a jaqueta, chegou certinho e o tamanho ficou perfeito! Material de qualidade, costuras bem feitas. Já usei em viagem e é muito confortável. Super indico!",
+    rating: 5,
+    image: "/reviews/patricia-mendes.png",
+    date: "02/04/2026",
+    productBought: "Jaqueta NORISK Trip Air Rosa",
+    verified: true,
+  },
+  {
+    name: "Camila Souza",
+    text: "Capacete LS2 muito top! Acabamento impecável, viseira cristalina e ventilação excelente. Melhor custo-benefício que já comprei! As cores são lindas ao vivo.",
+    rating: 5,
+    image: "/reviews/camila-souza.png",
+    date: "28/03/2026",
+    productBought: "LS2 FF353 Rapid Athena",
+    verified: true,
+  },
+  {
+    name: "Rafael Mendes",
+    text: "Produto excelente, chegou bem embalado e dentro do prazo! Qualidade impressionante, muito feliz com a compra. Já recomendei para vários amigos motociclistas.",
+    rating: 5,
+    date: "25/03/2026",
+    productBought: "NORISK Razor Black Edition",
+    verified: true,
+  },
 ];
 
 export const brands: Record<string, BrandInfo> = {
